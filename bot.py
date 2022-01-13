@@ -15,9 +15,6 @@ query = '#localhackday -is:retweet'
 
 response = client.search_recent_tweets(query=query, max_results=50)
 
-# for tweet in response.data:
-#     print(tweet.id)
-
 for tweet in response.data:
     retweet = client.retweet(tweet_id=f'{tweet.id}')
     print("Retweeted")
