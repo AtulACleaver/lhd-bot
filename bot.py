@@ -20,5 +20,5 @@ for tweet in response.data:
     print("Retweeted")
     like = client.like(tweet_id=f'{tweet.id}')
     print("Liked")
-    time.sleep(10)
+    time.sleep(1)
 
